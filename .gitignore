@@ -1,0 +1,14 @@
+*.ai
+*.psd
+# css원본 업로드x
+*.scss
+*.css
+*.pdf
+# .vscode 폴더에 데이터 정보 들어가 있으므로 제외!
+.vscode/
+img/
+data/
+*.xml
+*.hwp
+*.json
+*.cvs

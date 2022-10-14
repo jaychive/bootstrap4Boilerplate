@@ -9,14 +9,16 @@
         <meta name="keywords" content="프론트엔드, FrontEnd, Front-end, FE, 프론트엔드 개발자, 웹 개발자, 개발자, 웹, 개발, HTML, CSS, SCSS, Bootstrap, Javascript, jQuery, Photoshop, Illustrator, 기획, 마케팅, 3개국어, 영어, 일본어">
         <meta name="og:type" property="og:type" content="website" />
         <!-- <meta name="og:url" property="og:url" content="https://www.cj.net/" /> -->
-        <meta name="og:image" property="og:image" href="./jay/img/seo/seoBanner.jpg" />
+        <meta name="og:image" property="og:image" src="./jay/img/seo/seoBanner.jpg" />
         <meta name="og:title" property="og:title" content="황정연" />
         <meta name="og:description" property="og:description" content="FE개발자"/>
 
         <!-- 바로가기 -->
+        <!-- 180으로 고쳐주길... -->
         <link rel="apple-touch-icon" sizes="180x180" href="./jay/img/seo/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./jay/img/seo/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./jay/img/seo/favicon-16x16.png">
+        <link rel="shortcut icon" href="./jay/img/seo/favicon.svg">
         <link rel="manifest" href="/site.webmanifest">
 
         <!-- Google tag (gtag.js) -->
@@ -30,8 +32,6 @@
         </script>
 
         <title>자연주의 BRING GREEN</title>
-
-        <link rel="shortcut icon" href="./jay/img/seo/favicon.svg">
 
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
@@ -54,12 +54,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#event">발매 기념 이벤트</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#newProduct">신제품 이름</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#brandStory">BRING GREEN</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#reviews">경청하는 브링그린</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#productInfo">제품 성분</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#eventForm">이벤트 응모</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#newProduct">NEW</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#brandStory">BRAND</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#reviews">VOICES</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#newProdInfo">INGREDIENTS</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#event1">EVENTS</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#products">PRODUCTS</a></li>
                     </ul>
                     <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
                         <span class="d-flex align-items-center">
@@ -71,7 +71,7 @@
             </div>
         </nav>
         <!-- 신제품 발매 이벤트 안내 -->
-        <header id="event" class="masthead">
+        <header id="newEvent" class="masthead">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6">
@@ -156,7 +156,7 @@
         <section id="brandStory" class="cta">
             <div class="cta-content">
                 <div class="container px-5">
-                    <h2 class="text-white display-2 mb-3">
+                    <h2 class="text-white display-4 mb-3">
                         We BRING your GREEN
                         <br>
                         자연주의 브랜드
@@ -168,7 +168,7 @@
                 </div>
             </div>
         </section>
-        <!-- 구제품 리뷰 -->
+        <!-- 구제품 불호 리뷰 -->
         <section id="reviews" class="bg-light">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
@@ -183,7 +183,7 @@
             </div>
         </section>
         <!-- 제품 기능 소개 -->
-        <section id="productInfo">
+        <section id="newProdInfo">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
@@ -244,8 +244,36 @@
                 </div>
             </div>
         </section>
-        <!-- 이벤트 응모란 -->
-        <section id="eventForm" class="bg-light">
+        <!-- 이벤트1 오프라인 -->
+        <section id="event1" class="bg-light">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                    <div class="col-12 col-lg-5">
+                        <h2 class="display-4 lh-1 mb-4">Enter a new age of web design</h2>
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.</p>
+                    </div>
+                    <div class="col-sm-8 col-md-6">
+                        <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 이벤트2 온라인 -->
+        <section id="event2" class="bg-light">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                    <div class="col-12 col-lg-5">
+                        <h2 class="display-4 lh-1 mb-4">Enter a new age of web design</h2>
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.</p>
+                    </div>
+                    <div class="col-sm-8 col-md-6">
+                        <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 브링그린 기존 제품(티트리 시카 수딩 크림 제외) -->
+        <section id="products" class="bg-light">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                     <div class="col-12 col-lg-5">
@@ -341,6 +369,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="jay/js/jay.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
