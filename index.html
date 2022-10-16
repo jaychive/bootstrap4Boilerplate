@@ -41,7 +41,8 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <!-- jay css-->
-        <link rel="stylesheet" href="./jay/css/jay.css">
+        <link rel="stylesheet" href="./jay/css/jay.min.css">
+        <link rel="stylesheet" href="./jay/css/jay02.css">
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -56,10 +57,9 @@
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#newProduct">NEW</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#brandStory">BRAND</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#reviews">VOICES</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#newProdInfo">INGREDIENTS</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#newProdInfo">PLUS+</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#event1">EVENTS</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#products">PRODUCTS</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#products">OTHERS</a></li>
                     </ul>
                     <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
                         <span class="d-flex align-items-center">
@@ -74,30 +74,27 @@
         <header id="newEvent" class="masthead">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6">
-                        <!-- Mashead text and app badges-->
-                        <div class="mb-5 mb-lg-0 text-center text-lg-start">
+                    <div class="col-lg-12">
+                        <div class="d-flex flex-column align-items-center text-center">
                             <h1 class="display-1 lh-1 mb-3">Showcase your app beautifully.</h1>
                             <p class="lead fw-normal text-muted mb-5">Launch your mobile app landing page faster with this free, open source theme from Start Bootstrap!</p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
-                                <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
-                                <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
+                                <a class="btn btn-outline-dark text-dark py-3 px-4 rounded-pill" href="#event1">응모하기</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 p-5 bg-dark">
                     </div>
                 </div>
             </div>
         </header>
-        <!-- 신제품 소개 -->
+        <!-- 신제품 간략 소개 -->
         <section id="newProduct">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
-                        <div class="container-fluid px-5">
-                            <div class="row gx-5">
-                                <div class="col-md-6 mb-5">
+            <div class="container my-5">
+                <div class="row gx-5 align-items-between">
+                    <h2 class="title-area text-center">NEW</h2>
+                    <div class="col-lg-12 d-flex align-items-center">
+                        <div class="container-fluid px-5 row">
+                            <div class="col-md-4 d-flex flex-column order-1 order-md-0 mb-5">
+                                <div class="col-md-12">
                                     <!-- Feature item-->
                                     <div class="text-center">
                                         <i class="bi-phone icon-feature text-gradient d-block mb-3"></i>
@@ -105,7 +102,7 @@
                                         <p class="text-muted mb-0">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
                                     </div>
                                 </div>
-                                <div class="col-md-6 mb-5">
+                                <div class="col-md-12">
                                     <!-- Feature item-->
                                     <div class="text-center">
                                         <i class="bi-camera icon-feature text-gradient d-block mb-3"></i>
@@ -114,8 +111,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-6 mb-5 mb-md-0">
+                            <div class="col-md-4 d-flex justify-content-center order-0 order-md-1 mb-5">
+                                    <img class="img-fluid" src="./jay/img/seo/seoBanner.jpg" alt="">
+                            </div>
+                            <div class="col-md-4 d-flex flex-column order-2 mb-5">
+                                <div class="col-md-12">
                                     <!-- Feature item-->
                                     <div class="text-center">
                                         <i class="bi-gift icon-feature text-gradient d-block mb-3"></i>
@@ -123,7 +123,7 @@
                                         <p class="text-muted mb-0">As always, this theme is free to download and use for any purpose!</p>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-12 d-none">
                                     <!-- Feature item-->
                                     <div class="text-center">
                                         <i class="bi-patch-check icon-feature text-gradient d-block mb-3"></i>
@@ -134,25 +134,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 order-lg-0">
-                        <!-- Features section device mockup-->
-                        <div class="features-device-mockup">
-                            <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                <defs>
-                                    <linearGradient id="circleGradient" gradientTransform="rotate(45)">
-                                        <stop class="gradient-start-color" offset="0%"></stop>
-                                        <stop class="gradient-end-color" offset="100%"></stop>
-                                    </linearGradient>
-                                </defs>
-                                <circle cx="50" cy="50" r="50"></circle></svg
-                            ><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg"></svg
-                            ><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"></circle></svg>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
-        <!-- 간단한 브링그린 브랜드 소개 -->
+        <!-- 브링그린 브랜드 간략 소개 -->
         <section id="brandStory" class="cta">
             <div class="cta-content">
                 <div class="container px-5">
@@ -164,124 +149,136 @@
                     <div class="pb-3">
                         <img class="w-50" src="./jay/img/logo/logo-white.png" alt="BRING GREEN Logo">
                     </div>
-                    <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <p class="lead fw-normal text-white mb-5">Launch your mobile app landing page faster with this free, open source theme from Start Bootstrap!</p>
+                    <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="#products">SEE PRODUCTS</a>
                 </div>
             </div>
         </section>
         <!-- 구제품 불호 리뷰 -->
-        <section id="reviews" class="bg-light">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-12 col-lg-5">
-                        <h2 class="display-4 lh-1 mb-4">Enter a new age of web design</h2>
-                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.</p>
-                    </div>
-                    <div class="col-sm-8 col-md-6">
-                        <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
+        <section id="reviews">
+            <div class="container px-5 my-5">
+                <div class="row gx-5">
+                    <div class="col-md-12 d-flex flex-column align-items-center">
+                        <h2 class="title-area lh-1 mb-4">Enter a new age of web design</h2>
+                        <p class="lead fw-normal text-center mb-5">This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.</p>
+                        <div class="reviewImg"></div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- 제품 기능 소개 -->
         <section id="newProdInfo">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
-                        <div class="container-fluid px-5">
-                            <div class="row gx-5">
-                                <div class="col-md-6 mb-5">
-                                    <!-- Feature item-->
-                                    <div class="text-center">
-                                        <i class="bi-phone icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Device Mockups</h3>
-                                        <p class="text-muted mb-0">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-5">
-                                    <!-- Feature item-->
-                                    <div class="text-center">
-                                        <i class="bi-camera icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Flexible Use</h3>
-                                        <p class="text-muted mb-0">Put an image, video, animation, or anything else in the screen!</p>
-                                    </div>
+            <div class="container">
+                <div class="row gx-5 align-items-center justify-content-center">
+                    <h2 class="title-area text-center">NEW</h2>
+                    <div class="container-fluid px-5 d-flex align-items-center">
+                        <div class="col-12 row justify-content-md-between justify-content-center mx-0 flex-wrap">
+                            <div class="newProdCir col-md-4 mb-5 mb-md-0">
+                                <!-- Feature item-->
+                                <div class="text-center">
+                                    <i class="bi-phone icon-feature text-gradient d-block mb-3"></i>
+                                    <h3 class="font-alt">Device Mockups</h3>
+                                    <p class="text-muted mb-0">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-6 mb-5 mb-md-0">
-                                    <!-- Feature item-->
-                                    <div class="text-center">
-                                        <i class="bi-gift icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Free to Use</h3>
-                                        <p class="text-muted mb-0">As always, this theme is free to download and use for any purpose!</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <!-- Feature item-->
-                                    <div class="text-center">
-                                        <i class="bi-patch-check icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Open Source</h3>
-                                        <p class="text-muted mb-0">Since this theme is MIT licensed, you can use it commercially!</p>
-                                    </div>
+                            <div class="newProdCir col-md-4 mb-5 mb-md-0">
+                                <!-- Feature item-->
+                                <div class="text-center">
+                                    <i class="bi-camera icon-feature text-gradient d-block mb-3"></i>
+                                    <h3 class="font-alt">Flexible Use</h3>
+                                    <p class="text-muted mb-0">Put an image, video, animation, or anything else in the screen!</p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 order-lg-0">
-                        <!-- Features section device mockup-->
-                        <div class="features-device-mockup">
-                            <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                <defs>
-                                    <linearGradient id="circleGradient" gradientTransform="rotate(45)">
-                                        <stop class="gradient-start-color" offset="0%"></stop>
-                                        <stop class="gradient-end-color" offset="100%"></stop>
-                                    </linearGradient>
-                                </defs>
-                                <circle cx="50" cy="50" r="50"></circle></svg
-                            ><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg"></svg
-                            ><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"></circle></svg>
+                            <div class="newProdCir col-md-4 mb-5 mb-md-0">
+                                <!-- Feature item-->
+                                <div class="text-center">
+                                    <i class="bi-gift icon-feature text-gradient d-block mb-3"></i>
+                                    <h3 class="font-alt">Free to Use</h3>
+                                    <p class="text-muted mb-0">As always, this theme is free to download and use for any purpose!</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- 이벤트1 오프라인 -->
-        <section id="event1" class="bg-light">
+        <section id="event1">
             <div class="container px-5">
-                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-12 col-lg-5">
-                        <h2 class="display-4 lh-1 mb-4">Enter a new age of web design</h2>
+                <div class="row gx-5 align-items-center justify-content-center justify-content-md-between">
+                    <div class="col-md-6 text-center">
+                        <h2 class="title-area lh-1 mb-4">Enter a new age of web design</h2>
                         <p class="lead fw-normal text-muted mb-5 mb-lg-0">This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.</p>
                     </div>
-                    <div class="col-sm-8 col-md-6">
-                        <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="px-5 px-sm-0"><img class="img-fluid" src="./jay/img/seo/apple-touch-icon.png" alt="..." /></div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- 이벤트2 온라인 -->
-        <section id="event2" class="bg-light">
+        <section id="event2">
             <div class="container px-5">
-                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-12 col-lg-5">
-                        <h2 class="display-4 lh-1 mb-4">Enter a new age of web design</h2>
-                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.</p>
+                <div class="row gx-5">
+                    <div class="w-100 d-flex flex-column align-items-center text-center">
+                        <h2 class="title-area lh-1 mb-4">Enter a new age of web design</h2>
+                        <p class="lead fw-normal text-muted mb-5">This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.</p>
+                        <!-- 폼태그 부트스트랩3에서 떼어오기 -->
                     </div>
-                    <div class="col-sm-8 col-md-6">
-                        <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
+                    <div class="w-100 content-row">
+                        <div class="">
+                            <form name="sentMessage" id="contactForm" novalidate>
+                                <div class="row control-group">
+                                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                                        <label>성함</label>
+                                        <input type="text" class="form-control" placeholder="성함" id="name" required data-validation-required-message="Please enter your name.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="row control-group">
+                                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                                        <label>이메일 주소</label>
+                                        <input type="email" class="form-control" placeholder="이메일 주소" id="email" required data-validation-required-message="Please enter your email address.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="row control-group">
+                                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                                        <label>휴대폰 번호</label>
+                                        <input type="tel" class="form-control" placeholder="휴대폰 번호" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="row control-group">
+                                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                                        <label>불법 거래 페이지 링크</label>
+                                        <textarea rows="3" class="form-control" placeholder="불법 거래 페이지 링크" id="pageLink" required data-validation-required-message="Please enter a link."></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div id="success"></div>
+                                <div class="row">
+                                    <div class="form-group col-xs-12">
+                                        <button type="submit" class="btn btn-outline-dark">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- 브링그린 기존 제품(티트리 시카 수딩 크림 제외) -->
-        <section id="products" class="bg-light">
+        <!-- 브링그린 기존 제품 carousel (티트리 시카 수딩 크림 제외) -->
+        <section id="products">
             <div class="container px-5">
-                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-12 col-lg-5">
-                        <h2 class="display-4 lh-1 mb-4">Enter a new age of web design</h2>
+                <div class="row gx-5">
+                    <div class="col-12 d-flex flex-column align-items-center text-center">
+                        <h2 class="title-area lh-1 mb-4">Enter a new age of web design</h2>
                         <p class="lead fw-normal text-muted mb-5 mb-lg-0">This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.</p>
-                    </div>
-                    <div class="col-sm-8 col-md-6">
-                        <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
+                        <!-- 폼태그 부트스트랩3에서 떼어오기 -->
+                        <div class="prodCarousel"></div>
+                        <a class="btn btn-outline-dark text-dark py-3 px-4 rounded-pill" href="https://www.oliveyoung.co.kr/store/display/getBrandShopDetail.do?onlBrndCd=A002253&chlNo=6&chlDtlNo=11&utm_source=google&utm_medium=powerlink&utm_campaign=onpro_emnet_default-brand_0101_1231&utm_content=pc_brand&gclid=EAIaIQobChMIy_qNiank-gIVSk5gCh12jQc9EAAYASAAEgLqhPD_BwE" target="_blank">GO HOMEPAGE</a>
                     </div>
                 </div>
             </div>
