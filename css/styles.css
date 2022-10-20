@@ -11416,9 +11416,10 @@ section {
 section.cta {
   position: relative;
   padding: 15rem 0;
-  background-image: url(../jay/img/seo/seoBanner.jpg);
+  background-image: url(https://pbs.twimg.com/media/FexzQFKaAAAIvrH?format=jpg&name=4096x4096);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 section.cta .cta-content {
   position: relative;
